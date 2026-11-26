@@ -1,0 +1,18 @@
+export {
+  noArrayFilterMap,
+  noChainedTypeAssertions,
+  noConditionalEmptyObjectSpread,
+  noKnownValueWidening,
+  noModuleMocking,
+  noObjectParameters,
+  noReduceAccumulatorCopy,
+  noReflectApply,
+  noReflectGet,
+  noRuntimeTypeof,
+  noShapeInSymbolNames,
+  noUnknownParameters,
+  noUnknownReturns,
+  noUnknownTypeAliases,
+  noUnsafeDictionaryType,
+  noWidenThenAssert,
+} from "./rules/generic.ts";
