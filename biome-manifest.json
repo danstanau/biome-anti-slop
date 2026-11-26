@@ -1,0 +1,68 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/manifest_schema.json",
+  "version": 1,
+  "plugins": {
+    "rules": [
+      { "noArrayFilterMap": "./src/rules/no-array-filter-map.ts" },
+      {
+        "noReduceAccumulatorCopy": "./src/rules/no-reduce-accumulator-copy.ts"
+      },
+      {
+        "noChainedTypeAssertions": "./src/rules/no-chained-type-assertions.ts"
+      },
+      {
+        "noConditionalEmptyObjectSpread": "./src/rules/no-conditional-empty-object-spread.ts"
+      },
+      { "noKnownValueWidening": "./src/rules/no-known-value-widening.ts" },
+      { "noModuleMocking": "./src/rules/no-module-mocking.ts" },
+      { "noObjectParameters": "./src/rules/no-object-parameters.ts" },
+      { "noReflectApply": "./src/rules/no-reflect-apply.ts" },
+      { "noReflectGet": "./src/rules/no-reflect-get.ts" },
+      { "noRuntimeTypeof": "./src/rules/no-runtime-typeof.ts" },
+      { "noShapeInSymbolNames": "./src/rules/no-shape-in-symbol-names.ts" },
+      { "noUnknownParameters": "./src/rules/no-unknown-parameters.ts" },
+      { "noUnknownReturns": "./src/rules/no-unknown-returns.ts" },
+      { "noUnknownTypeAliases": "./src/rules/no-unknown-type-aliases.ts" },
+      { "noUnsafeDictionaryType": "./src/rules/no-unsafe-dictionary-type.ts" },
+      { "noWidenThenAssert": "./src/rules/no-widen-then-assert.ts" },
+      {
+        "noManualEffectErrorTag": "./src/effect/no-manual-effect-error-tag.ts"
+      },
+      { "noManualTagComparison": "./src/effect/no-manual-tag-comparison.ts" },
+      {
+        "noManualTaggedConstruction": "./src/effect/no-manual-tagged-construction.ts"
+      },
+      {
+        "noServiceConstructorImports": "./src/effect/no-service-constructor-imports.ts"
+      },
+      { "preferEffectMatch": "./src/effect/prefer-effect-match.ts" }
+    ],
+    "presets": {
+      "recommended": [
+        "noArrayFilterMap",
+        "noReduceAccumulatorCopy",
+        "noChainedTypeAssertions",
+        "noConditionalEmptyObjectSpread",
+        "noKnownValueWidening",
+        "noModuleMocking",
+        "noObjectParameters",
+        "noReflectApply",
+        "noReflectGet",
+        "noRuntimeTypeof",
+        "noShapeInSymbolNames",
+        "noUnknownParameters",
+        "noUnknownReturns",
+        "noUnknownTypeAliases",
+        "noUnsafeDictionaryType",
+        "noWidenThenAssert"
+      ],
+      "effect": [
+        "noManualEffectErrorTag",
+        "noManualTagComparison",
+        "noManualTaggedConstruction",
+        "noServiceConstructorImports",
+        "preferEffectMatch"
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "@danstanau/biome-anti-slop",
+  "version": "0.1.0",
+  "description": "Opinionated Biome lint rules for low-evidence JavaScript and TypeScript patterns, inspired by anti-slop.",
+  "type": "module",
+  "author": "DanStan (https://github.com/danstanau)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danstanau/biome-anti-slop.git"
+  },
+  "homepage": "https://github.com/danstanau/biome-anti-slop#readme",
+  "bugs": {
+    "url": "https://github.com/danstanau/biome-anti-slop/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "biome": "./biome-manifest.json"
+  },
+  "files": [
+    "biome-manifest.json",
+    "src",
+    "LICENSE",
+    "UPSTREAM.md"
+  ],
+  "scripts": {
+    "check": "pnpm lint && pnpm typecheck && pnpm test",
+    "lint": "biome check .",
+    "test": "tsx scripts/test-plugin.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@biomejs/runtime": "2.6.9"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.9",
+    "@types/node": "26.2.0",
+    "tsx": "4.23.12",
+    "typescript": "7.0.2"
+  },
+  "peerDependencies": {
+    "@biomejs/biome": "2.6.9"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "license": "MIT",
+  "keywords": [
+    "biome",
+    "biome-plugin",
+    "lint",
+    "typescript",
+    "javascript",
+    "anti-slop"
+  ]
+}
